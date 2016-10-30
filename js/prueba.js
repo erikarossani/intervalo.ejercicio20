@@ -5,7 +5,10 @@ window.addEventListener("load", function() {
 		var numero = parseInt(document.getElementById("numero").value);
 
 		var resultado = document.getElementById("resultado");
-		setInterval(function(){ document.getElementById("resultado").innerHTML = numero++; }, segundos*1000);
+		setInterval(function(){
+		           resultado.innerHTML = numero++ 
+		           }, segundos*1000);
+		
 		document.getElementById("segundos").value = "";
 		document.getElementById("numero").value = "";
 	});
